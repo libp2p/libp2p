@@ -12,6 +12,11 @@ libp2p is the product of a long, and arduous quest of understanding -- a deep di
 
 We will be writing a set of docs, posts, tutorials, and talks to explain what p2p is, why it is tremendously useful, and how it can help your existing and new projects.
 
+## Implementations
+
+- [go-libp2p](//github.com/libp2p/go-libp2p) in Go
+- [js-libp2p](//github.com/libp2p/js-libp2p) in Javascript, for Node and the Browser
+
 ## Stub Explanation
 
 ### libp2p is the networking layer of IPFS
