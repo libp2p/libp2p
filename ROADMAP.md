@@ -59,13 +59,35 @@ NA
 
 ----------------------------------------------------------------
 
-# Milestone 3 - The libp2p.io
+# Milestone 3 - Standardize Organization
+
+> Summary: The main goal of this milestone is to get the libp2p organization cleaned up and provide an easier dev experience.
+
+### Tasks:
+
+- [ ] Standardize all READMEs and repositories in the libp2p organization
+  - [ ] Use standard-readme for all READMEs
+  - [ ] Look at project-repos.ipfs.io to ensure green across the board.
+  - [ ] Point to IPFS community guidelines for the libp2p project
+
+### Dependencies:
+
+### Requirements by other projects:
+
+### Notes:
+
+Having the community guidelines pointed to, and creating custom ones as needed, should be the priority.
+
+##### Expected date of completion: `Q3`
+
+----------------------------------------------------------------
+
+# Milestone 4 - libp2p.io
 
 > Summary: The main goal of this milestone is to get more developers excited about libp2p and learn how to use it.
 
 ### Tasks:
 
-- [ ] Replicate(point to) IPFS community guidelines for the libp2p project
 - [ ] libp2p.io - https://github.com/libp2p/libp2p-website
 
 ### Dependencies:
@@ -74,13 +96,13 @@ NA
 
 ### Notes:
 
-The Website and replicating the IPFS community guidelines should be the priority
+The website should be launched, accessible, and thoughtful.
 
 ##### Expected date of completion: `Q3`
 
 ----------------------------------------------------------------
 
-# Milestone 4 - Developer Experience
+# Milestone 5 - Developer Experience
 
 > Summary: Get libp2p into a state that is super easy to use and understand.
 
@@ -106,7 +128,7 @@ The Website and replicating the IPFS community guidelines should be the priority
 
 ----------------------------------------------------------------
 
-# Milestone 5 - Move DHT to use IPRS
+# Milestone 6 - Move DHT to use IPRS
 
 > Summary: Currently our records are simple protobufs that get stored in the datastore. With this milestone, any record (provider or IPNS) will be a full IPLD object that follows the IPRS spec.
 
@@ -126,7 +148,7 @@ The Website and replicating the IPFS community guidelines should be the priority
 
 ----------------------------------------------------------------
 
-# Milestone 6 - Break DHT into Peer Routing and Content Routing
+# Milestone 7 - Break DHT into Peer Routing and Content Routing
 
 > Summary:
 
@@ -147,7 +169,7 @@ This milestone is still very green, however something we know for sure we want t
 
 ----------------------------------------------------------------
 
-# Milestone 7 - Packet Switching / Overlay Network
+# Milestone 8 - Packet Switching / Overlay Network
 
 > Summary: The packet switched overlay network
 
