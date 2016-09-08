@@ -16,9 +16,11 @@
 > Summary: Achieve interoperability between the JS and Go implementations, specificially with secio.
 
 - Tasks
-  - [ ] Migration to pull-streams (track: https://github.com/ipfs/js-ipfs/issues/403). Also part of js-ipfs Milestone 2
+  - [x] Migration to pull-streams (track: https://github.com/ipfs/js-ipfs/issues/403). Also part of js-ipfs Milestone 2
   - [x] js-secio - https://github.com/libp2p/js-libp2p-secio
-  - [ ] Interop tests (track: https://github.com/ipfs/js-libp2p-ipfs/issues/15)
+  - [ ] Interop with Go
+    - [x] Verify that it interops
+    - [ ] Automated tests(track: https://github.com/ipfs/js-libp2p-ipfs/issues/15)
   - [ ] Integrate the `ping protocol` in js-libp2p (track: https://github.com/ipfs/js-libp2p-ipfs/pull/13)
 - Dependencies:
   - n/a
