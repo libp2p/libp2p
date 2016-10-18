@@ -123,20 +123,23 @@ Having the community guidelines pointed to, and creating custom ones as needed, 
 
 ## Milestone - libp2p.io
 
-> Summary:
+> Summary: We need to ship a first version of the libp2p.io website
 
 ### Leads
 
-- David
-- Richard
+- @VictorBjelkholm
 
 ### Tasks
 
-- [ ] libp2p.io - https://github.com/libp2p/libp2p-website
+- [ ] Agree and create tasks about what's missing for first version
+- [ ] Deploy and setup CD for shipping website
 
 ### Notes
 
+
 The website should be launched, accessible, and thoughtful.
+
+libp2p.io has it's repository here: https://github.com/libp2p/libp2p-website
 
 ### Expected date of completion: `Week 6 - November 21`
 
