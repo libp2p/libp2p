@@ -132,6 +132,10 @@ Having the community guidelines pointed to, and creating custom ones as needed, 
 ### Tasks
 
 - [ ] Agree and create tasks about what's missing for first version
+- [ ] Agree on where to take inspiration
+- [ ] Come up with site structure (sitemap)
+- [ ] Have content written and integrated
+- [ ] Setup Libp2p examples
 - [ ] Deploy and setup CD for shipping website
 
 ### Notes
