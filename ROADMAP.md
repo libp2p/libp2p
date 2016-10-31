@@ -224,6 +224,30 @@ libp2p.io has it's repository here: https://github.com/libp2p/libp2p-website
 ----------------------------------------------------------------
 
 
+# Milestones to be added 
+
+> These need to be polished and more objective
+
+Lead: @lgiert
+
+Milestone - Packet Switching
+
+Lead: Lars
+
+Tasks:
+  multigram spec
+  stream-multiplexing over datagrams
+  we need a spec
+  
+Milestone - Understand how enable IPFS to work over unreliable connections
+
+Lead: Lars
+
+Milestone - Implement ^^
+
+Lead: Lars
+
+
 
 --------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------
