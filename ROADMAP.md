@@ -140,6 +140,33 @@ libp2p.io has it's repository here: https://github.com/libp2p/libp2p-website
 
 ----------------------------------------------------------------
 
+## Milestone - Ship Private Networks
+
+> Summary: have pre-shared key based private networks in go-libp2p and go-ipfs
+
+### Leads
+
+- Kuba
+
+### Tasks
+ - [x] Choose crypto primitive - XSalsa20 -  https://github.com/ipfs/notes/issues/177#issuecomment-255588927
+ - [ ] Get review on the crypto
+ - [x] Decide on format for key file in ipfs repo - https://github.com/ipfs/notes/issues/177#issue-183845331
+ - [x] Write a spec/manual
+ - [ ] Publish the spec/manual
+ - [ ] Implementation:
+   - [x] Create private networks interface - https://github.com/libp2p/go-libp2p-interface-pnet/
+   - [ ] Finish private netwroks interface
+   - [ ] Finish private networks implementation - https://github.com/libp2p/go-libp2p-pnet
+   - [ ] Integrate private networks interface with go-libp2p-swarm and go-ipfs
+ - [ ] Tests for private networks
+
+### Notes
+
+### Expected date of completion: `Week 7 - November 28`
+
+----------------------------------------------------------------
+
 
 
 ## Milestone - ship js-libp2p-dht
@@ -196,32 +223,6 @@ libp2p.io has it's repository here: https://github.com/libp2p/libp2p-website
 
 ----------------------------------------------------------------
 
-## Milestone - Ship Private Networks
-
-> Summary: have pre-shared key based private networks in go-libp2p and go-ipfs
-
-### Leads
-
-- Kuba
-
-### Tasks
- - [x] Choose crypto primitive - XSalsa20 -  https://github.com/ipfs/notes/issues/177#issuecomment-255588927
- - [ ] Get review on the crypto
- - [x] Decide on format for key file in ipfs repo - https://github.com/ipfs/notes/issues/177#issue-183845331
- - [x] Write a spec/manual
- - [ ] Publish the spec/manual
- - [ ] Implementation:
-   - [x] Create private networks interface - https://github.com/libp2p/go-libp2p-interface-pnet/
-   - [ ] Finish private netwroks interface
-   - [ ] Finish private networks implementation - https://github.com/libp2p/go-libp2p-pnet
-   - [ ] Integrate private networks interface with go-libp2p-swarm and go-ipfs
- - [ ] Tests for private networks
-
-### Notes
-
-### Expected date of completion: `Week 7 - November 28`
-
----------
 
 
 --------------------------------------------------------------------------------------------------------------------------------
@@ -229,7 +230,7 @@ libp2p.io has it's repository here: https://github.com/libp2p/libp2p-website
 
 # CACHED MILESTONES (for later re-evaluation)
 
-## Milestone 5 - Developer Experience
+## Milestone - Developer Experience
 
 > Summary: Get libp2p into a state that is super easy to use and understand.
 
@@ -253,7 +254,7 @@ libp2p.io has it's repository here: https://github.com/libp2p/libp2p-website
 
 ----------------------------------------------------------------
 
-## Milestone 6 - Move DHT to use IPRS
+## Milestone - Move DHT to use IPRS
 
 > Summary: Currently our records are simple protobufs that get stored in the datastore. With this milestone, any record (provider or IPNS) will be a full IPLD object that follows the IPRS spec.
 
@@ -269,7 +270,7 @@ libp2p.io has it's repository here: https://github.com/libp2p/libp2p-website
 
 ----------------------------------------------------------------
 
-## Milestone 7 - Break DHT into Peer Routing and Content Routing
+## Milestone - Break DHT into Peer Routing and Content Routing
 
 > Summary: `NA`
 
@@ -285,7 +286,7 @@ This milestone is still very green, however something we know for sure we want t
 
 ----------------------------------------------------------------
 
-## Milestone 8 - Packet Switching / Overlay Network
+## Milestone - Packet Switching / Overlay Network
 
 > Summary: The packet switched overlay network
 
