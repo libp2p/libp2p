@@ -187,6 +187,46 @@ libp2p.io has it's repository here: https://github.com/libp2p/libp2p-website
 
 
 
+## Milestone - Packet Switching #1
+
+> Summary: low-level groundwork for the packet switched overlay network
+
+### Leads
+
+- Lars
+
+### Tasks
+
+- [ ] multigram spec and go-multigram implementation - https://github.com/multiformats/multigram
+- [ ] message-oriented interfaces in libp2p
+- [ ] go-udp-transport implementation
+- [ ] message-oriented /ping implementation
+
+### Notes
+
+This milestone makes libp2p capable of datagrams, or message-oriented communication.
+It fleshes out the interfaces through libp2p and the transports, and enables message-based protocols up to the swarm layer.
+
+More milestones in Q1/2017 will implement:
+- The switch
+  - Send/receive messages through a route over the network of peers.
+- The actual overlay routing
+  - Find and maintain routes through the network.
+- IP/Ethernet through a TUN/TAP interface
+- Transport capabilities:
+  - Can this transport do streams, i.e. reliable plus ordered?
+- Selective reliability upgrade
+  - Swarm protocols should use a reliability layer of their own if they need a stream, and the transport doesn't take care of it.
+  - Even for mostly message-based protocols it sometimes makes sense to briefly have a stream.
+- Messages over streams
+  - Put framing around messages so that we can send/receive them even if we only a have a stream-based transport which doesn't technically do message-based.
+
+### Expected date of completion: `Week 10 - December 19`
+
+----------------------------------------------------------------
+
+
+
 ## Milestone - Write libp2p-relay spec
 
 > Summary:
@@ -220,33 +260,6 @@ libp2p.io has it's repository here: https://github.com/libp2p/libp2p-website
 ### Notes
 
 ### Expected date of completion: `Week 13 - January 9`
-
-----------------------------------------------------------------
-
-
-# Milestones to be added 
-
-> These need to be polished and more objective
-
-Lead: @lgiert
-
-Milestone - Packet Switching
-
-Lead: Lars
-
-Tasks:
-  multigram spec
-  stream-multiplexing over datagrams
-  we need a spec
-  
-Milestone - Understand how enable IPFS to work over unreliable connections
-
-Lead: Lars
-
-Milestone - Implement ^^
-
-Lead: Lars
-
 
 
 --------------------------------------------------------------------------------------------------------------------------------
@@ -309,27 +322,6 @@ This milestone is still very green, however something we know for sure we want t
 ### Expected date of completion: `NA`
 
 ----------------------------------------------------------------
-
-## Milestone - Packet Switching / Overlay Network
-
-> Summary: The packet switched overlay network
-
-### Tasks
-
-- [ ] Packet switch implemented and integrated into go-ipfs
-  - https://github.com/ipfs/notes/issues/143
-
-### Dependencies
-
-- [ ] Multigram specced and implemented in Golang
-  - https://github.com/multiformats/multigram
-
-### Notes
-
-The overlay network will not have any multi-hop routing for now.
-We only introduce the packet switch and continue being a direct single-hop network.
-
-### Expected date of completion: ``
 
 ## Milestone - Improve Connectivity of go-libp2p/go-ipfs
 
