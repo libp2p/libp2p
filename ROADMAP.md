@@ -150,16 +150,18 @@ libp2p.io has it's repository here: https://github.com/libp2p/libp2p-website
 
 ### Tasks
  - [x] Choose crypto primitive - XSalsa20 -  https://github.com/ipfs/notes/issues/177#issuecomment-255588927
- - [ ] Get review on the crypto
+ - [x] Get review on the crypto
  - [x] Decide on format for key file in ipfs repo - https://github.com/ipfs/notes/issues/177#issue-183845331
  - [x] Write a spec/manual
  - [ ] Publish the spec/manual
  - [ ] Implementation:
    - [x] Create private networks interface - https://github.com/libp2p/go-libp2p-interface-pnet/
-   - [ ] Finish private netwroks interface
-   - [ ] Finish private networks implementation - https://github.com/libp2p/go-libp2p-pnet
-   - [ ] Integrate private networks interface with go-libp2p-swarm and go-ipfs
- - [ ] Tests for private networks
+   - [x] Finish private netwroks interface
+   - [x] Finish private networks implementation - https://github.com/libp2p/go-libp2p-pnet
+   - [x] Integrate private networks interface with go-libp2p-swarm and go-ipfs
+   - [ ] Error propagation cleanup
+   - [ ] Key generation tooling
+ - [x] Tests for private networks
 
 ### Notes
 
