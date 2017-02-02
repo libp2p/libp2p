@@ -15,7 +15,7 @@ We will be writing a set of docs, posts, tutorials, and talks to explain what p2
 
 ## Spec 
 
-- [spec](https://github.com/ipfs/specs/tree/master/libp2p)
+- [spec](https://github.com/libp2p/specs)
 
 ## Implementations
 
