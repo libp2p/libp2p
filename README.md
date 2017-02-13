@@ -1,9 +1,10 @@
-libp2p
+<p align="center">
+  <img src="./logo/libp2p-logo.png" />
+</p>
+
 ======
 
 > This document presents libp2p, a modularized and extensible network stack to overcome the networking challenges faced when doing peer-to-peer applications. libp2p is used by IPFS as its networking library.
-
-![](img/logo.png)
 
 # Description
 
@@ -13,7 +14,7 @@ libp2p is the product of a long, and arduous quest of understanding -- a deep di
 
 We will be writing a set of docs, posts, tutorials, and talks to explain what p2p is, why it is tremendously useful, and how it can help your existing and new projects.
 
-## Spec 
+## Spec
 
 - [spec](https://github.com/libp2p/specs)
 
