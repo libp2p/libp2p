@@ -1,11 +1,13 @@
 <p align="center">
-  <img src="./logo/libp2p-logo.png" />
+<a href="https://libp2p.io"><img src="./logo/libp2p-logo.png" /></a>
 </p>
 
 libp2p
 ======
 
 > This document presents libp2p, a modularized and extensible network stack to overcome the networking challenges faced when doing peer-to-peer applications. libp2p is used by IPFS as its networking library.
+
+Read more about libp2p at https://libp2p.io
 
 # Description
 
