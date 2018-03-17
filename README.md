@@ -25,6 +25,7 @@ We will be writing a set of docs, posts, tutorials, and talks to explain what p2
 
 - [go-libp2p](//github.com/libp2p/go-libp2p) in Go
 - [js-libp2p](//github.com/libp2p/js-libp2p) in Javascript, for Node and the Browser
+- [rust-libp2p](//github.com/libp2p/rust-libp2p) in Rust
 
 ## Stub Explanation
 
