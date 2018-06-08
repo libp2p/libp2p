@@ -53,6 +53,6 @@ We will be writing a set of docs, posts, tutorials, and talks to explain what p2
 
 ![](img/libp2p.006.jpg)
 
-### libp2p cool demo: orbit.libp2p.io (p2p chat)
+### libp2p cool demo: orbit.chat (p2p chat)
 
 ![](img/libp2p.007.jpg)
