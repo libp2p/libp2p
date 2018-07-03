@@ -1,4 +1,4 @@
-# Roadmap to libp2p Feature Complete State
+# libp2p Requirements Document aka Roadmap to libp2p feature complete
 
 ## Table of Contents
 
@@ -16,12 +16,21 @@ In order for libp2p to achieve its goals, the project will need to achieve the i
 - [ ] Standardized interfaces (using a neutral IDL) to define conformance in any language implementation
 - [ ] Interoperability testing framework
 
-
-### libp2p Protocols
+### libp2p Modules Implementations 
 
 The libp2p protocols are the protocol stack for the modular libp2p protocols library. These form a p2p-first network stack, with no assumptions, self description, and modular interfaces. More at https://github.com/ipfs/specs/tree/master/libp2p
 
-- [x] libp2p architecture
+> Legend: :green_apple: Done &nbsp; :lemon: In Progress &nbsp; :tomato: Missing &nbsp; :chestnut: Not planned
+
+| Transports                                   | Go            | JS - Node.js  |  JS - Browser | Rust          |
+| -------------------------------------------- | :-----------: | :-----------: | :-----------: | :-----------: |
+| **`TCP`**                                    | :green_apple: | :green_apple: | :chestnut:    | :green_apple: |
+| **`WebRTC`**                                 | :tomato:      | :green_apple: | :green_apple: | :tomato:      |
+
+
+`TODO` transform the below into tables
+
+- [x] libp2p Node
   - [x] libp2p impl in Go
   - [x] libp2p impl in JS
   - [x] libp2p impl in Rust
@@ -88,13 +97,13 @@ The libp2p protocols are the protocol stack for the modular libp2p protocols lib
   - [ ] Stream Muxer: QUIC in Go
   - [ ] Stream Muxer: QUIC in JS
   - [ ] Stream Muxer: QUIC in Rust
-- [x] Swarm / Switch: interfaces
+- [x] Switch: interfaces
   - [x] Dialer stack in Go
   - [x] Dialer stack in JS
   - [ ] Dialer stack in Rust
-  - [x] Swarm implementation in Go
-  - [x] Swarm implementation in JS
-  - [ ] Swarm implementation in Rust
+  - [x] Switch implementation in Go
+  - [x] Switch implementation in JS
+  - [ ] Switch implementation in Rust
 - [x] NAT Traversal: interfaces
   - [x] nat-pmp implementation in Go
   - [ ] nat-pmp implementation in JS
@@ -166,6 +175,13 @@ The libp2p protocols are the protocol stack for the modular libp2p protocols lib
   - [ ] Consensus: PBFT
   - [ ] Consensus: Nakamoto
 
+### Specifications
+
+`TODO` needs a spec requirements/goals as well
+
+### Performance Milestones
+
+`TODO` needs performance milestones
 
 ### Polish level
 
