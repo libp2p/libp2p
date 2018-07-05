@@ -1,13 +1,8 @@
 <p align="center">
-<a href="https://libp2p.io"><img src="./logo/libp2p-logo.png" /></a>
+  <a href="https://libp2p.io"><img src="./logo/white-bg-2.png" /></a>
 </p>
 
-libp2p
-======
-
 > This document presents libp2p, a modularized and extensible network stack to overcome the networking challenges faced when doing peer-to-peer applications. libp2p is used by IPFS as its networking library.
-
-Read more about libp2p at https://libp2p.io
 
 # Description
 
@@ -17,9 +12,11 @@ libp2p is the product of a long, and arduous quest of understanding -- a deep di
 
 We will be writing a set of docs, posts, tutorials, and talks to explain what p2p is, why it is tremendously useful, and how it can help your existing and new projects.
 
-## Spec
+Meanwhile, learn more about libp2p at [**libp2p.io**](https://libp2p.io)
 
-- [spec](https://github.com/libp2p/specs)
+## Specification
+
+- [Specs](https://github.com/libp2p/specs)
 
 ## Implementations
 
@@ -28,6 +25,8 @@ We will be writing a set of docs, posts, tutorials, and talks to explain what p2
 - [rust-libp2p](//github.com/libp2p/rust-libp2p) in Rust
 
 ## Stub Explanation
+
+> Overview of the libp2p project
 
 ### libp2p is the networking layer of IPFS
 
