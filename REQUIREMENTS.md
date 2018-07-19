@@ -1,20 +1,24 @@
-# libp2p Requirements Document aka Roadmap to libp2p feature complete
+# libp2p Requirements: Roadmap to Feature Complete
 
 ## Table of Contents
 
 - [Description](#description)
 - [Cross Language Milestones](#cross-language-milestones)
-- [libp2p Protocols](#libp2p-protocols)
+- [libp2p Modules Implementations](#libp2p-modules-implementations)
+- [Performance Milestones](#performance-milestones)
 - [Polish Level](#polish-level)
 
 ## Description
 
 In order for libp2p to achieve its goals, the project will need to achieve the items described in this document.
 
-### Cross Language Milestones
+This document is in the process of being updated.  Currently known deficiencies:
+ * Rust is incomplete (some tomatoes should be apples)
+ * Should we divide Node.js and Browser, or just a have a single JS column?
+ * Needs a proofread from implementors to make sure the fruits are correct
+ * [Performance Milestones](#performance-milestones) is incomplete - need to agree on what these are
 
-- [ ] Standardized interfaces (using a neutral IDL) to define conformance in any language implementation
-- [ ] Interoperability testing framework
+As you improve this document, please remove items from the list above.
 
 ### libp2p Modules Implementations 
 
@@ -22,162 +26,104 @@ The libp2p protocols are the protocol stack for the modular libp2p protocols lib
 
 > Legend: :green_apple: Done &nbsp; :lemon: In Progress &nbsp; :tomato: Missing &nbsp; :chestnut: Not planned
 
-| Transports                                   | Go            | JS - Node.js  |  JS - Browser | Rust          |
-| -------------------------------------------- | :-----------: | :-----------: | :-----------: | :-----------: |
-| **`TCP`**                                    | :green_apple: | :green_apple: | :chestnut:    | :green_apple: |
-| **`WebRTC`**                                 | :tomato:      | :green_apple: | :green_apple: | :tomato:      |
+| libp2p Node                                  | Go            | JS - Node.js    |  JS - Browser   | Rust          |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
+| **`libp2p impl`**                            | :green_apple: | :green_apple:   | :green_apple:   | :green_apple: |
+
+| Identify Protocol interfaces                 | Go            | JS - Node.js    |  JS - Browser   | Rust          |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
+| **`Identify: impl`**                         | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
 
 
-`TODO` transform the below into tables
+| Transport Protocol interfaces                | Go            | JS - Node.js    |  JS - Browser   | Rust          |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
+| **`TCP`**                                    | :green_apple: | :green_apple:   | :green_apple:   | :green_apple: |
+| **`UTP`**                                    | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
+| **`UDP`**                                    | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
+| **`WebSockets`**                             | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
+| **`WebRTC`**                                 | :tomato:      | :green_apple:   | :green_apple:   | :tomato:      |
+| **`SCTP`**                                   | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| **`Tor`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| **`i2p`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| **`cjdns`**                                  | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| **`Bluetooth LE`**                           | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| **`Audio TP`**                               | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| **`Zerotier`**                               | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| **`QUIC`**                                   | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
 
-- [x] libp2p Node
-  - [x] libp2p impl in Go
-  - [x] libp2p impl in JS
-  - [x] libp2p impl in Rust
-- [x] Identify Protocol interfaces
-  - [x] Identify: impl in Go
-  - [x] Identify: impl in JS
-  - [ ] Identify: impl in Rust
-- [x] Transport Protocol interfaces
-  - [x] Transport protocol: TCP in Go
-  - [x] Transport protocol: TCP in JS node
-  - [ ] Transport protocol: TCP in Rust
-  - [x] Transport protocol: UTP in Go
-  - [x] Transport protocol: UTP in JS node
-  - [ ] Transport protocol: UTP in Rust
-  - [x] Transport protocol: UDT in Go
-  - [ ] Transport protocol: UDT in JS node
-  - [ ] Transport protocol: UDT in Rust
-  - [x] Transport protocol: WebSockets in Go
-  - [x] Transport protocol: WebSockets in JS node
-  - [x] Transport protocol: WebSockets in JS browser
-  - [ ] Transport protocol: WebSockets in Rust
-  - [ ] Transport protocol: WebRTC in Go
-  - [x] Transport protocol: WebRTC in JS node
-  - [x] Transport protocol: WebRTC in JS browser
-  - [ ] Transport protocol: WebRTC in Rust
-  - [ ] Transport protocol: SCTP in Go
-  - [ ] Transport protocol: SCTP in JS node
-  - [ ] Transport protocol: SCTP in Rust
-  - [ ] Transport protocol: tor in Go
-  - [ ] Transport protocol: tor in JS node
-  - [ ] Transport protocol: tor in Rust
-  - [ ] Transport protocol: i2p in Go
-  - [ ] Transport protocol: i2p in JS node
-  - [ ] Transport protocol: i2p in Rust
-  - [ ] Transport protocol: cjdns in Go
-  - [ ] Transport protocol: cjdns in JS node
-  - [ ] Transport protocol: cjdns in Rust
-  - [ ] Transport protocol: Bluetooth LE in Go
-  - [ ] Transport protocol: Bluetooth LE in JS node
-  - [ ] Transport protocol: Bluetooth LE in Rust
-  - [ ] Transport protocol: Audio TP in Go
-  - [ ] Transport protocol: Audio TP in JS node
-  - [ ] Transport protocol: Audio TP in Rust
-  - [ ] Transport protocol: Zerotier in Go
-  - [ ] Transport protocol: Zerotier in JS node
-  - [ ] Transport protocol: Zerotier in Rust
-  - [ ] Transport protocol: QUIC in Go
-  - [ ] Transport protocol: QUIC in JS node
-  - [ ] Transport protocol: QUIC in Rust
-- [x] Stream Muxer: interfaces
-  - [x] Stream Muxer: benchmarks in Go
-  - [x] Stream Muxer: benchmarks in JS
-  - [ ] Stream Muxer: benchmarks in Rust
-  - [x] Stream Muxer: muxado in Go
-  - [ ] Stream Muxer: muxado in Rust
-  - [x] Stream Muxer: spdystream in Go
-  - [x] Stream Muxer: multiplex in Go
-  - [x] Stream Muxer: multiplex in JS
-  - [ ] Stream Muxer: multiplex in Rust
-  - [x] Stream Muxer: spdy in JS
-  - [ ] Stream Muxer: http2 in Go
-  - [ ] Stream Muxer: http2 in JS
-  - [ ] Stream Muxer: http2 in Rust
-  - [ ] Stream Muxer: QUIC in Go
-  - [ ] Stream Muxer: QUIC in JS
-  - [ ] Stream Muxer: QUIC in Rust
-- [x] Switch: interfaces
-  - [x] Dialer stack in Go
-  - [x] Dialer stack in JS
-  - [ ] Dialer stack in Rust
-  - [x] Switch implementation in Go
-  - [x] Switch implementation in JS
-  - [ ] Switch implementation in Rust
-- [x] NAT Traversal: interfaces
-  - [x] nat-pmp implementation in Go
-  - [ ] nat-pmp implementation in JS
-  - [ ] nat-pmp implementation in Rust
-  - [x] upnp implementation in Go
-  - [ ] upnp implementation in JS
-  - [ ] upnp implementation in Rust
-  - [x] ext addr discovery in Go
-  - [ ] ext addr discovery in JS
-  - [ ] ext addr discovery in Rust
-  - [ ] STUN-like implementation in Go
-  - [ ] STUN-like implementation in JS
-  - [ ] STUN-like implementation in Rust
-  - [x] line-switch relay implementation in Go
-  - [ ] line-switch relay implementation in JS
-  - [ ] line-switch relay implementation in Rust
-  - [ ] pkt-switch relay implementation in Go
-  - [ ] pkt-switch relay implementation in JS
-  - [ ] pkt-switch relay implementation in Rust
-- [x] Peer Discovery: interfaces
-  - [x] Peer Discovery: mDNS in Go
-  - [x] Peer Discovery: mDNS in JS
-  - [ ] Peer Discovery: mDNS in Rust
-  - [x] Peer Discovery: bootstrap list in JS
-  - [x] Peer Discovery: bootstrap list in Go
-  - [ ] Peer Discovery: bootstrap list in Rust
-  - [x] Peer Discovery: DHT query in JS
-  - [x] Peer Discovery: DHT query in Go
-  - [ ] Peer Discovery: DHT query in Rust
-  - [ ] Peer Discovery: PEX in JS
-  - [ ] Peer Discovery: PEX in Go
-  - [ ] Peer Discovery: PEX in Rust
-  - [ ] Peer Discovery: DNS in JS
-  - [ ] Peer Discovery: DNS in Go
-  - [ ] Peer Discovery: DNS in Rust
-- [x] Content Routing: protocol interfaces
-  - [x] Content Routing: Kademlia DHT impl in Go
-  - [x] Content Routing: Kademlia DHT impl in JS
-  - [ ] Content Routing: Kademlia DHT impl in Rust
-  - [ ] Content Routing: pub/sub impl in Go
-  - [ ] Content Routing: pub/sub impl in JS
-  - [ ] Content Routing: pub/sub impl in Rust
-  - [ ] Content Routing: PHT in Go
-  - [ ] Content Routing: PHT in JS
-  - [ ] Content Routing: PHT in Rust
-- [x] Peer Routing: protocol interfaces
-  - [x] Peer Routing: Kademlia DHT impl in Go
-  - [x] Peer Routing: Kademlia DHT impl in JS
-  - [ ] Peer Routing: Kademlia DHT impl in Rust
-  - [ ] Peer Routing: pub/sub impl in Go
-  - [ ] Peer Routing: pub/sub impl in JS
-  - [ ] Peer Routing: pub/sub impl in Rust
-  - [ ] Peer Routing: PHT in Go
-  - [ ] Peer Routing: PHT in JS
-  - [ ] Peer Routing: PHT in Rust
-- [x] Exchange: protocol interfaces
-  - [x] Exchange: HTTP in Go
-  - [x] Exchange: HTTP in JS
-  - [ ] Exchange: HTTP in Rust
-  - [x] Exchange: Bitswap in Go
-  - [x] Exchange: Bitswap in JS
-  - [ ] Exchange: Bitswap in Rust
-  - [x] Exchange: Bittorrent in Go
-  - [x] Exchnage: Bittorrent in JS
-  - [ ] Exchnage: Bittorrent in Rust
-- [ ] Consensus: protocol interfaces
-  - [ ] Consensus: Paxos
-  - [ ] Consensus: Raft
-  - [ ] Consensus: PBFT
-  - [ ] Consensus: Nakamoto
 
-### Specifications
+| Stream Muxer: interfaces                     | Go            | JS - Node.js    |  JS - Browser   | Rust          |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
+| **`benchmarks`**                             | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
+| **`muxado`**                                 | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
+| **`spdystream`**                             | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
+| **`multiplex`**                              | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
+| **`spdy`**                                   | :tomato:      | :green_apple:   | :green_apple:   | :tomato:      |
+| **`http2`**                                  | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| **`QUIC`**                                   | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
 
-`TODO` needs a spec requirements/goals as well
+
+| Switch: interfaces                           | Go            | JS - Node.js    |  JS - Browser   | Rust          |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
+| **`Dialer stack`**                           | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
+| **`Switch implementation`**                  | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
+
+
+
+| NAT Traversal: interfaces                    | Go            | JS - Node.js    |  JS - Browser   | Rust          |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
+| **`nat-pmp implementation`**                 | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
+| **`upnp implementation`**                    | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
+| **`ext addr discovery`**                     | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
+| **`STUN-like implementation`**               | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| **`line-switch relay implementation`**       | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
+| **`pkt-switch relay implementation`**        | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+
+
+| Peer Discovery: interfaces                   | Go            | JS - Node.js    |  JS - Browser   | Rust          |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
+| **`mDNS`**                                   | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
+| **`bootstrap list`**                         | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
+| **`DHT query`**                              | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
+| **`PEX`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| **`DNS`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+
+
+
+| Content Routing: protocol interfaces         | Go            | JS - Node.js    |  JS - Browser   | Rust          |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
+| **`Kademlia DHT impl`**                      | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
+| **`pub/sub impl`**                           | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| **`PHT`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+
+
+
+| Peer Routing: protocol interfaces            | Go            | JS - Node.js    |  JS - Browser   | Rust          |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
+| **`Kademlia DHT impl`**                      | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
+| **`pub/sub impl`**                           | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| **`PHT`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+
+
+| Exchange: protocol interfaces                | Go            | JS - Node.js    |  JS - Browser   | Rust          |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
+| **`HTTP`**                                   | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
+| **`Bitswap`**                                | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
+| **`Bittorrent`**                             | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
+
+
+| Consensus: protocol interfaces               | Go            | JS - Node.js    |  JS - Browser   | Rust          |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
+| **`Paxos`**                                  | :chestnut:    | :chestnut:      | :chestnut:      | :chestnut:    |
+| **`Raft`**                                   | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| **`PBTF`**                                   | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| **`Nakamoto`**                               | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+
+
+### Cross Language Milestones
+
+- [ ] Standardized interfaces (using a neutral IDL) to define conformance in any language implementation
+- [ ] Interoperability testing framework
 
 ### Performance Milestones
 
