@@ -22,20 +22,20 @@ As you improve this document, please remove items from the list above.
 
 ### libp2p Modules Implementations 
 
-The libp2p protocols are the protocol stack for the modular libp2p protocols library. These form a p2p-first network stack, with no assumptions, self description, and modular interfaces. More at https://github.com/ipfs/specs/tree/master/libp2p
+The libp2p protocols are the protocol stack for the modular libp2p protocols library. These form a p2p-first network stack, with no assumptions, self description, and modular interfaces. More at https://github.com/libp2p/specs/
 
 > Legend: :green_apple: Done &nbsp; :lemon: In Progress &nbsp; :tomato: Missing &nbsp; :chestnut: Not planned
 
 | libp2p Node                                  | Go            | JS - Node.js    |  JS - Browser   | Rust          |
 | -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
-| **`libp2p impl`**                            | :green_apple: | :green_apple:   | :green_apple:   | :green_apple: |
+| **`libp2p`**                                 | :green_apple: | :green_apple:   | :green_apple:   | :green_apple: |
 
-| Identify Protocol interfaces                 | Go            | JS - Node.js    |  JS - Browser   | Rust          |
+| Identify Protocol                            | Go            | JS - Node.js    |  JS - Browser   | Rust          |
 | -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
-| **`Identify: impl`**                         | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
+| **`Identify`**                               | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
 
 
-| Transport Protocol interfaces                | Go            | JS - Node.js    |  JS - Browser   | Rust          |
+| Transport Protocols                          | Go            | JS - Node.js    |  JS - Browser   | Rust          |
 | -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
 | **`TCP`**                                    | :green_apple: | :green_apple:   | :green_apple:   | :green_apple: |
 | **`UTP`**                                    | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
@@ -52,7 +52,7 @@ The libp2p protocols are the protocol stack for the modular libp2p protocols lib
 | **`QUIC`**                                   | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
 
 
-| Stream Muxer: interfaces                     | Go            | JS - Node.js    |  JS - Browser   | Rust          |
+| Stream Muxers                                | Go            | JS - Node.js    |  JS - Browser   | Rust          |
 | -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
 | **`benchmarks`**                             | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
 | **`muxado`**                                 | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
@@ -63,24 +63,24 @@ The libp2p protocols are the protocol stack for the modular libp2p protocols lib
 | **`QUIC`**                                   | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
 
 
-| Switch: interfaces                           | Go            | JS - Node.js    |  JS - Browser   | Rust          |
+| Switch                                       | Go            | JS - Node.js    |  JS - Browser   | Rust          |
 | -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
 | **`Dialer stack`**                           | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
-| **`Switch implementation`**                  | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
+| **`Switch`**                                 | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
 
 
 
-| NAT Traversal: interfaces                    | Go            | JS - Node.js    |  JS - Browser   | Rust          |
+| NAT Traversal                                | Go            | JS - Node.js    |  JS - Browser   | Rust          |
 | -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
-| **`nat-pmp implementation`**                 | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
-| **`upnp implementation`**                    | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
+| **`nat-pmp`**                                | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
+| **`upnp`**                                   | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
 | **`ext addr discovery`**                     | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
-| **`STUN-like implementation`**               | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
-| **`line-switch relay implementation`**       | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
-| **`pkt-switch relay implementation`**        | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| **`STUN-like`**                              | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| **`line-switch relay`**                      | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
+| **`pkt-switch relay`**                       | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
 
 
-| Peer Discovery: interfaces                   | Go            | JS - Node.js    |  JS - Browser   | Rust          |
+| Peer Discovery                               | Go            | JS - Node.js    |  JS - Browser   | Rust          |
 | -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
 | **`mDNS`**                                   | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
 | **`bootstrap list`**                         | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
@@ -90,29 +90,29 @@ The libp2p protocols are the protocol stack for the modular libp2p protocols lib
 
 
 
-| Content Routing: protocol interfaces         | Go            | JS - Node.js    |  JS - Browser   | Rust          |
+| Content Routing                              | Go            | JS - Node.js    |  JS - Browser   | Rust          |
 | -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
-| **`Kademlia DHT impl`**                      | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
-| **`pub/sub impl`**                           | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| **`Kademlia DHT`**                           | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
+| **`pub/sub`**                                | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
 | **`PHT`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
 
 
 
-| Peer Routing: protocol interfaces            | Go            | JS - Node.js    |  JS - Browser   | Rust          |
+| Peer Routing                                 | Go            | JS - Node.js    |  JS - Browser   | Rust          |
 | -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
-| **`Kademlia DHT impl`**                      | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
-| **`pub/sub impl`**                           | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| **`Kademlia DHT`**                           | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
+| **`pub/sub`**                                | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
 | **`PHT`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
 
 
-| Exchange: protocol interfaces                | Go            | JS - Node.js    |  JS - Browser   | Rust          |
+| Exchange                                     | Go            | JS - Node.js    |  JS - Browser   | Rust          |
 | -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
 | **`HTTP`**                                   | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
 | **`Bitswap`**                                | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
 | **`Bittorrent`**                             | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
 
 
-| Consensus: protocol interfaces               | Go            | JS - Node.js    |  JS - Browser   | Rust          |
+| Consensus                                    | Go            | JS - Node.js    |  JS - Browser   | Rust          |
 | -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
 | **`Paxos`**                                  | :chestnut:    | :chestnut:      | :chestnut:      | :chestnut:    |
 | **`Raft`**                                   | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
