@@ -26,98 +26,99 @@ The libp2p protocols are the protocol stack for the modular libp2p protocols lib
 
 > Legend: :green_apple: Done &nbsp; :lemon: In Progress &nbsp; :tomato: Missing &nbsp; :chestnut: Not planned
 
-| libp2p Node                                  | Go            | JS - Node.js    |  JS - Browser   | Rust          |
-| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
-| **`libp2p`**                                 | :green_apple: | :green_apple:   | :green_apple:   | :green_apple: |
+| libp2p Node                                  | Go            | JS - Node.js    |  JS - Browser   | Rust          | Python        |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: | :-----------: |
+| **`libp2p`**                                 | :green_apple: | :green_apple:   | :green_apple:   | :green_apple: | :green_apple: |
 
-| Identify Protocol                            | Go            | JS - Node.js    |  JS - Browser   | Rust          |
-| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
-| **`Identify`**                               | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
-
-
-| Transport Protocols                          | Go            | JS - Node.js    |  JS - Browser   | Rust          |
-| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
-| **`TCP`**                                    | :green_apple: | :green_apple:   | :green_apple:   | :green_apple: |
-| **`UTP`**                                    | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
-| **`UDP`**                                    | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
-| **`WebSockets`**                             | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
-| **`WebRTC`**                                 | :tomato:      | :green_apple:   | :green_apple:   | :tomato:      |
-| **`SCTP`**                                   | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
-| **`Tor`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
-| **`i2p`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
-| **`cjdns`**                                  | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
-| **`Bluetooth LE`**                           | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
-| **`Audio TP`**                               | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
-| **`Zerotier`**                               | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
-| **`QUIC`**                                   | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| Identify Protocol                            | Go            | JS - Node.js    |  JS - Browser   | Rust          | Python        |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: | :-----------: |
+| **`Identify`**                               | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      | :tomato:      |
 
 
-| Stream Muxers                                | Go            | JS - Node.js    |  JS - Browser   | Rust          |
-| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
-| **`benchmarks`**                             | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
-| **`muxado`**                                 | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
-| **`spdystream`**                             | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
-| **`multiplex`**                              | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
-| **`spdy`**                                   | :tomato:      | :green_apple:   | :green_apple:   | :tomato:      |
-| **`http2`**                                  | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
-| **`QUIC`**                                   | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| Transport Protocols                          | Go            | JS - Node.js    |  JS - Browser   | Rust          | Python        |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: | :-----------: |
+| **`TCP`**                                    | :green_apple: | :green_apple:   | :green_apple:   | :green_apple: | :lemon:       |
+| **`UTP`**                                    | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      | :tomato:      |
+| **`UDP`**                                    | :green_apple: | :tomato:        | :tomato:        | :tomato:      | :tomato:      |
+| **`WebSockets`**                             | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      | :tomato:      |
+| **`WebRTC`**                                 | :tomato:      | :green_apple:   | :green_apple:   | :tomato:      | :chestnut:    |
+| **`SCTP`**                                   | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
+| **`Tor`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
+| **`i2p`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
+| **`cjdns`**                                  | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
+| **`Bluetooth LE`**                           | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
+| **`Audio TP`**                               | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
+| **`Zerotier`**                               | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
+| **`QUIC`**                                   | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
 
 
-| Switch                                       | Go            | JS - Node.js    |  JS - Browser   | Rust          |
-| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
-| **`Dialer stack`**                           | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
-| **`Switch`**                                 | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
+| Stream Muxers                                | Go            | JS - Node.js    |  JS - Browser   | Rust          | Python        |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: | :-----------: |
+| **`benchmarks`**                             | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      | :chestnut:    |
+| **`muxado`**                                 | :green_apple: | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
+| **`spdystream`**                             | :green_apple: | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
+| **`multiplex`**                              | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      | :lemon:       |
+| **`spdy`**                                   | :tomato:      | :green_apple:   | :green_apple:   | :tomato:      | :chestnut:    |
+| **`http2`**                                  | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
+| **`QUIC`**                                   | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
+| **`yamux`**                                  | :chestnut:    | :chestnut:      | :chestnut:      | :chestnut:    | :tomato:      |
 
 
-
-| NAT Traversal                                | Go            | JS - Node.js    |  JS - Browser   | Rust          |
-| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
-| **`nat-pmp`**                                | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
-| **`upnp`**                                   | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
-| **`ext addr discovery`**                     | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
-| **`STUN-like`**                              | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
-| **`line-switch relay`**                      | :green_apple: | :tomato:        | :tomato:        | :tomato:      |
-| **`pkt-switch relay`**                       | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
-
-
-| Peer Discovery                               | Go            | JS - Node.js    |  JS - Browser   | Rust          |
-| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
-| **`mDNS`**                                   | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
-| **`bootstrap list`**                         | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
-| **`DHT query`**                              | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
-| **`PEX`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
-| **`DNS`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| Switch                                       | Go            | JS - Node.js    |  JS - Browser   | Rust          | Python        |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: | :-----------: |
+| **`Dialer stack`**                           | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      | :chestnut:    |
+| **`Switch`**                                 | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      | :lemon:       |
 
 
 
-| Content Routing                              | Go            | JS - Node.js    |  JS - Browser   | Rust          |
-| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
-| **`Kademlia DHT`**                           | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
-| **`pub/sub`**                                | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
-| **`PHT`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| NAT Traversal                                | Go            | JS - Node.js    |  JS - Browser   | Rust          | Python        |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: | :-----------: |
+| **`nat-pmp`**                                | :green_apple: | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
+| **`upnp`**                                   | :green_apple: | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
+| **`ext addr discovery`**                     | :green_apple: | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
+| **`STUN-like`**                              | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
+| **`line-switch relay`**                      | :green_apple: | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
+| **`pkt-switch relay`**                       | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
+
+
+| Peer Discovery                               | Go            | JS - Node.js    |  JS - Browser   | Rust          | Python        |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: | :-----------: |
+| **`mDNS`**                                   | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      | :tomato:      |
+| **`bootstrap list`**                         | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      | :green_apple: |
+| **`DHT query`**                              | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      | :tomato:      |
+| **`PEX`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
+| **`DNS`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
 
 
 
-| Peer Routing                                 | Go            | JS - Node.js    |  JS - Browser   | Rust          |
-| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
-| **`Kademlia DHT`**                           | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
-| **`pub/sub`**                                | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
-| **`PHT`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| Content Routing                              | Go            | JS - Node.js    |  JS - Browser   | Rust          | Python        |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: | :-----------: |
+| **`Kademlia DHT`**                           | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      | :tomato:      |
+| **`pub/sub`**                                | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :tomato:      |
+| **`PHT`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
 
 
-| Exchange                                     | Go            | JS - Node.js    |  JS - Browser   | Rust          |
-| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
-| **`HTTP`**                                   | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
-| **`Bitswap`**                                | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
-| **`Bittorrent`**                             | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      |
+
+| Peer Routing                                 | Go            | JS - Node.js    |  JS - Browser   | Rust          | Python        |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: | :-----------: |
+| **`Kademlia DHT`**                           | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      | :tomato:      |
+| **`pub/sub`**                                | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :tomato:      |
+| **`PHT`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
 
 
-| Consensus                                    | Go            | JS - Node.js    |  JS - Browser   | Rust          |
-| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: |
-| **`Paxos`**                                  | :chestnut:    | :chestnut:      | :chestnut:      | :chestnut:    |
-| **`Raft`**                                   | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
-| **`PBTF`**                                   | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
-| **`Nakamoto`**                               | :tomato:      | :tomato:        | :tomato:        | :tomato:      |
+| Exchange                                     | Go            | JS - Node.js    |  JS - Browser   | Rust          | Python        |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: | :-----------: |
+| **`HTTP`**                                   | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      | :chestnut:    |
+| **`Bitswap`**                                | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      | :chestnut:    |
+| **`Bittorrent`**                             | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      | :chestnut:    |
+
+
+| Consensus                                    | Go            | JS - Node.js    |  JS - Browser   | Rust          | Python        |
+| -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: | :-----------: |
+| **`Paxos`**                                  | :chestnut:    | :chestnut:      | :chestnut:      | :chestnut:    | :chestnut:    |
+| **`Raft`**                                   | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
+| **`PBTF`**                                   | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
+| **`Nakamoto`**                               | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
 
 
 ### Cross Language Milestones
