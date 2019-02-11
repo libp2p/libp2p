@@ -41,7 +41,7 @@ The libp2p protocols are the protocol stack for the modular libp2p protocols lib
 | **`UTP`**                                    | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      | :tomato:      |
 | **`UDP`**                                    | :green_apple: | :tomato:        | :tomato:        | :tomato:      | :tomato:      |
 | **`WebSockets`**                             | :green_apple: | :green_apple:   | :green_apple:   | :tomato:      | :tomato:      |
-| **`WebRTC`**                                 | :tomato:      | :green_apple:   | :green_apple:   | :tomato:      | :chestnut:    |
+| **`WebRTC`**                                 | :tomato:      | :green_apple:   | :green_apple:   | :tomato:      | :tomato:    |
 | **`SCTP`**                                   | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
 | **`Tor`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
 | **`i2p`**                                    | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
@@ -73,8 +73,8 @@ The libp2p protocols are the protocol stack for the modular libp2p protocols lib
 
 | NAT Traversal                                | Go            | JS - Node.js    |  JS - Browser   | Rust          | Python        |
 | -------------------------------------------- | :-----------: | :-------------: | :-------------: | :-----------: | :-----------: |
-| **`nat-pmp`**                                | :green_apple: | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
-| **`upnp`**                                   | :green_apple: | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
+| **`nat-pmp`**                                | :green_apple: | :tomato:        | :tomato:        | :tomato:      | :tomato:    |
+| **`upnp`**                                   | :green_apple: | :tomato:        | :tomato:        | :tomato:      | :tomato:    |
 | **`ext addr discovery`**                     | :green_apple: | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
 | **`STUN-like`**                              | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
 | **`line-switch relay`**                      | :green_apple: | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
