@@ -30,7 +30,7 @@ Meanwhile, learn more about libp2p at [**libp2p.io**](https://libp2p.io)
 - [go-libp2p](//github.com/libp2p/go-libp2p) in Go
 - [js-libp2p](//github.com/libp2p/js-libp2p) in Javascript, for Node and the Browser
 - [rust-libp2p](//github.com/libp2p/rust-libp2p) in Rust
-- [py-libp2p](//github.com/zixuanzh/py-libp2p) in Python 3
+- [py-libp2p](//github.com/libp2p/py-libp2p) in Python
 
 ## Stub Explanation
 
