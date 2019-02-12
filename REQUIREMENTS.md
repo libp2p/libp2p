@@ -61,7 +61,7 @@ The libp2p protocols are the protocol stack for the modular libp2p protocols lib
 | **`spdy`**                                   | :tomato:      | :green_apple:   | :green_apple:   | :tomato:      | :chestnut:    |
 | **`http2`**                                  | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
 | **`QUIC`**                                   | :tomato:      | :tomato:        | :tomato:        | :tomato:      | :chestnut:    |
-| **`yamux`**                                  | :chestnut:    | :chestnut:      | :chestnut:      | :chestnut:    | :tomato:      |
+| **`yamux`**                                  | :green_apple: | :chestnut:      | :chestnut:      | :chestnut:    | :tomato:      |
 
 
 | Switch                                       | Go            | JS - Node.js    |  JS - Browser   | Rust          | Python        |
