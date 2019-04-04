@@ -19,7 +19,7 @@ libp2p is the product of a long, and arduous quest of understanding -- a deep di
 
 We will be writing a set of docs, posts, tutorials, and talks to explain what p2p is, why it is tremendously useful, and how it can help your existing and new projects.
 
-Meanwhile, learn more about libp2p at [**libp2p.io**](https://libp2p.io)
+Meanwhile, learn more about libp2p at [**libp2p.io**](https://libp2p.io) and follow our evolving documentation efforts at [**docs.libp2p.io**](https://docs.libp2p.io)
 
 ## Specification
 
@@ -31,6 +31,10 @@ Meanwhile, learn more about libp2p at [**libp2p.io**](https://libp2p.io)
 - [js-libp2p](//github.com/libp2p/js-libp2p) in Javascript, for Node and the Browser
 - [rust-libp2p](//github.com/libp2p/rust-libp2p) in Rust
 - [py-libp2p](//github.com/libp2p/py-libp2p) in Python
+
+## Community Discussion
+
+Please visit our discussion forums at [**discuss.libp2p.io**](https://discuss.libp2p.io) to get help, ask questions about the past, present, and future of libp2p, and more.
 
 ## Stub Explanation
 
