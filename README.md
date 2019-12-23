@@ -30,6 +30,7 @@ Meanwhile, learn more about libp2p at [**libp2p.io**](https://libp2p.io) and fol
 - [js-libp2p](//github.com/libp2p/js-libp2p) in Javascript, for Node and the Browser
 - [rust-libp2p](//github.com/libp2p/rust-libp2p) in Rust
 - [py-libp2p](//github.com/libp2p/py-libp2p) in Python
+- [cpp-libp2p](//github.com/soramitsu/libp2p) in C++
 
 ## Community Discussion
 
