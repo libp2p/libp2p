@@ -2,6 +2,32 @@
 
 > r0, 2020-01-04; author: @raulk
 
+**Table of contents**
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Motivation](#motivation)
+- [Descriptive labels](#descriptive-labels)
+  - [Functional area (`area/`)](#functional-area-area)
+  - [Component (`comp/`)](#component-comp)
+  - [Difficulty (`dif/`)](#difficulty-dif)
+  - [Size (`size/`)](#size-size)
+  - [Kind (`kind/`)](#kind-kind)
+  - [Impact (`impact/`)](#impact-impact)
+  - [Topic (`topic/`)](#topic-topic)
+- [Execution labels](#execution-labels)
+  - [Priority (`Pn`)](#priority-pn)
+  - [Hints/advisories (`hint/`)](#hintsadvisories-hint)
+  - [Status (`status/`)](#status-status)
+- [Implementation plan](#implementation-plan)
+- [Inspiration](#inspiration)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Motivation
+
 This document describes the issue/ticket labelling taxonomy that is being
 adopted in the libp2p project.
 
@@ -76,7 +102,7 @@ that allow submitters to set these labels.
 * comp/wss
 * comp/yamux
 
-## Difficulty (`dif/`)
+### Difficulty (`dif/`)
 
 > Subjectively estimates the difficulty of resolution of an issue, based on
 > prior expertise about libp2p and its constructs, p2p networking, systems
@@ -94,7 +120,7 @@ Values and calibration guidance:
   ramifications of the issue, as well as deep understanding of the libp2p stack
   and experience with systems and network programming.
 
-## Size (`size/`)
+### Size (`size/`)
 
 > Estimates the amount of work. This axis is distinct to the complexity, e.g.
 > something can be easy but require a lot of work, or vice versa. Use 
@@ -108,7 +134,7 @@ Values and calibration guidance:
 * size/XL: 1 week.
 * size/XXL: > 1 week.
 
-## Kind (`kind/`)
+### Kind (`kind/`)
 
 > Describes the nature of the issue.
 
@@ -120,7 +146,7 @@ Values and calibration guidance:
 * kind/architecture
 * kind/discussion
 
-## Impact (`impact/`)
+### Impact (`impact/`)
 
 > Contextualises the impact, and therefore the perceived/derived severity, of
 > the issue.
@@ -131,7 +157,7 @@ Values and calibration guidance:
 * impact/dx
 * impact/test-flakiness
 
-## Topic (`topic/`)
+### Topic (`topic/`)
 
 > Classifies issues pertaining to particular themes. Topics can be created to
 > refer to epics, larger bodies of work, or ad-hoc endeavours.
@@ -140,14 +166,14 @@ Values and calibration guidance:
 * topic/docs
 * topic/infra
 
-### Execution labels
+## Execution labels
 
 These labels describe some aspect of the execution on the issue. These labels
 are dynamic; they change as a result of planning, analysis, scoping, and
 generally applying the development workflow. They are usually set by
 maintainers.
 
-## Priority (`Pn`)
+### Priority (`Pn`)
 
 > Indicates the current implementation priority; used for planning and
 > roadmapping purposes.
@@ -157,7 +183,7 @@ maintainers.
 * P2: Medium.
 * P3: Low.
 
-## Hints/advisories (`hint/`)
+### Hints/advisories (`hint/`)
 
 > Surfaces observations and facts about issues, facilitating progress to be
 > made.
@@ -174,7 +200,7 @@ maintainers.
 * hint/needs-review
 * hint/needs-help
 
-## Status (`status/`)
+### Status (`status/`)
 
 > Workflow-relevant. Marks the current status of the issue. 
 
@@ -185,6 +211,17 @@ maintainers.
 * status/inactive
 * status/waiting
 * status/rotten
+
+## Implementation plan
+
+1. Create labels on go-libp2p
+   [declaratively](https://github.com/micnncim/action-label-syncer).
+2. Write script to bulk transfer issues from inner repos to top-level go-libp2p
+   repo via the [`transferIssue` GraphQL mutation](https://developer.github.com/v4/mutation/transferissue/), attaching the appropriate area/component labels during the process.
+3. Disable issue tracker in inner repos.
+4. Triage all issues to assign the remaining labels.
+5. Profit! We can finally start implementing workflows and using tools like
+   ZenHub.
 
 ## Inspiration
 
