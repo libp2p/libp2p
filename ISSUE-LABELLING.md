@@ -38,7 +38,7 @@ features, demands, requests, discussions, etc. on a path towards better
 organisation, structure, and, ultimately, accountability within, between and
 towards the community and implementation teams.
 
-_"Why is this important?"_, you may ask. A taxonomy is the basic the building
+_"Why is this important?"_, you may ask. A taxonomy is the basic building
 block that makes it possible to create workflows for triaging, discussing,
 development, and ultimately, delivery. In fact, issue classification is only the
 start of a set of methods and tools we desire to ship to help facilitate
