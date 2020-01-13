@@ -115,7 +115,8 @@ Values and calibration guidance:
 * dif/easy: A prexisting libp2p user should be able to pick this up.
 * dif/medium: Prior experience in having developed libp2p modules is likely
   helpful.
-* dif/hard: Having worked 
+* dif/hard: Suggests that having worked on the specific component affected
+  by this issue is important.
 * dif/expert: Requires extensive knowledge of the history, implications,
   ramifications of the issue, as well as deep understanding of the libp2p stack
   and experience with systems and network programming.
@@ -123,7 +124,7 @@ Values and calibration guidance:
 ### Size (`size/`)
 
 > Estimates the amount of work. This axis is distinct to the complexity, e.g.
-> something can be easy but require a lot of work, or vice versa. Use 
+> something can be easy but require a lot of work, or vice versa. 
 
 Values and calibration guidance:
 
@@ -202,7 +203,7 @@ maintainers.
 
 ### Status (`status/`)
 
-> Workflow-relevant. Marks the current status of the issue. 
+> Marks the current status of the issue. 
 
 * status/done
 * status/deferred
