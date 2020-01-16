@@ -12,9 +12,9 @@
 - [Descriptive labels](#descriptive-labels)
   - [Functional area (`area/`)](#functional-area-area)
   - [Component (`comp/`)](#component-comp)
-  - [Difficulty (`dif/`)](#difficulty-dif)
-  - [Size (`size/`)](#size-size)
   - [Kind (`kind/`)](#kind-kind)
+  - [Difficulty (`dif/`)](#difficulty-dif)
+  - [Effort (`effort/`)](#effort-effort)
   - [Impact (`impact/`)](#impact-impact)
   - [Topic (`topic/`)](#topic-topic)
 - [Execution labels](#execution-labels)
@@ -102,6 +102,19 @@ that allow submitters to set these labels.
 * comp/wss
 * comp/yamux
 
+### Kind (`kind/`)
+
+> Describes the nature of the issue.
+
+* kind/bug
+* kind/improvement
+* kind/test
+* kind/tracking-issue
+* kind/question
+* kind/enhancement
+* kind/architecture
+* kind/discussion
+
 ### Difficulty (`dif/`)
 
 > Subjectively estimates the difficulty of resolution of an issue, based on
@@ -121,31 +134,19 @@ Values and calibration guidance:
   ramifications of the issue, as well as deep understanding of the libp2p stack
   and experience with systems and network programming.
 
-### Size (`size/`)
+### Effort (`effort/`)
 
 > Estimates the amount of work. This axis is distinct to the complexity, e.g.
 > something can be easy but require a lot of work, or vice versa. 
 
 Values and calibration guidance:
 
-* size/XS: minutes.
-* size/S: several hours.
-* size/M: one day.
-* size/L: 2-3 days.
-* size/XL: 1 week.
-* size/XXL: > 1 week.
-
-### Kind (`kind/`)
-
-> Describes the nature of the issue.
-
-* kind/bug
-* kind/improvement
-* kind/tracking-issue
-* kind/question
-* kind/enhancement
-* kind/architecture
-* kind/discussion
+* effort/minutes: minutes.
+* effort/hours: one or multiple hours.
+* effort/day: one day.
+* effort/days: multiple days.
+* effort/week: one week.
+* effort/weeks: multiple weeks.
 
 ### Impact (`impact/`)
 
