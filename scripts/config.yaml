@@ -1,0 +1,13 @@
+owner: aarshkshah1992
+goLibp2pRepo: testmainrepo
+
+repoToLabelsMap:
+  testsubrepo1:
+    - testsubrepo1.1
+    - testsubrepo1.2
+  testsubrepo2:
+    - testsubrepo2.1
+    - testsubrepo2.2
+
+redirectIssueTitle: Issues have been shifted to libp2p/go-libp2p issues
+redirectIssueBody: Please go to https://github.com/libp2p/go-libp2p/issues for all issues
