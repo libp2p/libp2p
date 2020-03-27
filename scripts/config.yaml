@@ -1,5 +1,5 @@
 owner: aarshkshah1992
-goLibp2pRepo: testmainrepo
+targetRepo: testmainrepo
 
 repoToLabelsMap:
   testsubrepo1:

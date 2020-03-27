@@ -3,14 +3,15 @@ package main
 import (
 	"context"
 	"fmt"
+	"os"
+	"strings"
+
 	"github.com/machinebox/graphql"
 	"github.com/pkg/errors"
 	"github.com/spf13/viper"
-	"os"
-	"strings"
 )
 
-type Edge struct {
+type NameIDEdge struct {
 	Cursor string
 	Node   struct {
 		Name string
@@ -26,14 +27,14 @@ type Config struct {
 	Owner              string
 	RedirectIssueTitle string
 	RedirectIssueBody  string
-	GoLibp2pRepo       string
+	TargetRepo         string
 
 	RepoToLabelsMap map[string][]string
 }
 
 const (
-	// place holders
-	cursorPlaceHoler  = "{LABEL_CURSOR}"
+	cursorPlaceholder = "{LABEL_CURSOR}"
+
 	bearerTokenEnvVar = "GITHUB_BEARER_TOKEN"
 )
 
@@ -46,13 +47,14 @@ var (
 func init() {
 	viper.AddConfigPath(".")
 	viper.SetConfigName("config")
+
 	if err := viper.ReadInConfig(); err != nil {
 		fmt.Printf("\n failed to read config file; err=%s", err)
 		os.Exit(1)
 	}
 
 	if err := viper.Unmarshal(&cfg); err != nil {
-		fmt.Print("\n failed to unmarshal config, err=%s", err)
+		fmt.Printf("\n failed to unmarshal config, err=%s", err)
 		os.Exit(1)
 	}
 
@@ -64,28 +66,38 @@ func init() {
 }
 
 func main() {
-	// fetch mainRepoId
-	mainRepoId, err := fetchRepoId(cfg.GoLibp2pRepo)
+	var err error
+
+	repos := struct {
+		Target  string
+		Sources map[string]string
+	}{
+		"",
+		make(map[string]string, len(cfg.RepoToLabelsMap)),
+	}
+
+	// Resolve the target repo ID.
+	repos.Target, err = resolveRepo(cfg.TargetRepo)
 	if err != nil {
-		fmt.Printf("\n failed to fetch repoId for main repo %s", cfg.GoLibp2pRepo)
+		fmt.Printf("\n failed to fetch repoId for main repo %s", cfg.TargetRepo)
 		os.Exit(1)
 	}
 
-	// fetch all repo Ids
-	repoIdsMap, err := fetchRepoIds()
+	// Resolve all target repo IDs.
+	repos.Sources, err = resolveSourceRepos()
 	if err != nil {
 		fmt.Printf("\n failed to fetch repoIds, err=%s", err)
 		os.Exit(1)
 	}
-	fmt.Printf("\n finished fetching repoIds, total Ids=%d", len(repoIdsMap))
+	fmt.Printf("\n finished fetching repoIds, total IDs=%d", len(repos.Sources))
 
-	// fetch all label Ids for the main repo
-	labelIdMap, err := fetchLabelIds(cfg.GoLibp2pRepo)
+	// Fetch all label IDs for the target repo.
+	labelIdMap, err := fetchLabelIds(cfg.TargetRepo)
 	if err != nil {
-		fmt.Printf("\n failed to fetch label Ids for repo %s, err=%s", cfg.GoLibp2pRepo, err)
+		fmt.Printf("\n failed to fetch label Ids for repo %s, err=%s", cfg.TargetRepo, err)
 		os.Exit(1)
 	}
-	fmt.Printf("\n finished fetching labelIds for repo %s, total labels=%d", cfg.GoLibp2pRepo, len(labelIdMap))
+	fmt.Printf("\n finished fetching labelIds for repo %s, total labels=%d", cfg.TargetRepo, len(labelIdMap))
 
 	// for each repo
 	for repoName, _ := range cfg.RepoToLabelsMap {
@@ -99,7 +111,7 @@ func main() {
 		}
 
 		// resolve reponame to repoId
-		repoId, ok := repoIdsMap[repoName]
+		repoId, ok := repos.Sources[repoName]
 		if !ok {
 			fmt.Printf("\n failed to resolve repoId for repo %s", repoName)
 			os.Exit(1)
@@ -114,7 +126,7 @@ func main() {
 		fmt.Printf("\n finished fetching issueIds for repoName %s, total issueIds=%d", repoName, len(issueIds))
 
 		// transfer all issueIds to the main repo & apply labels
-		if err := transferIssuesAndApplyLabels(mainRepoId, issueIds, labelIds); err != nil {
+		if err := transferIssuesAndApplyLabels(repos.Target, issueIds, labelIds); err != nil {
 			fmt.Printf("\n failed to transfer issue/apply label for repo %s, err=%s", repoName, err)
 			os.Exit(1)
 		}
@@ -161,34 +173,33 @@ func executeQuery(query string, resp interface{}) error {
 func fetchLabelIds(repoName string) (map[string]string, error) {
 	labelsToIds := make(map[string]string)
 
-	queryString := fmt.Sprintf(`
-	    {
+	queryString := fmt.Sprintf(`{
 	  repository(owner: "%s", name: "%s") {
 	    labels(first: 100%s) {
 	      edges {
 	        cursor
-	        node{
+	        node {
 	          name
 	          id
 	        }
 	      }
-
 	    }
 	  }
-	}`, cfg.Owner, repoName, cursorPlaceHoler)
+	}`, cfg.Owner, repoName, cursorPlaceholder)
 
 	type LabelData struct {
 		Repository struct {
 			Labels struct {
-				Edges []Edge
+				Edges []NameIDEdge
 			}
 		}
 	}
+
 	var labels LabelData
 	cursor := ""
 	for {
 		// set cursor for pagination
-		q := strings.Replace(queryString, cursorPlaceHoler, cursor, -1)
+		q := strings.Replace(queryString, cursorPlaceholder, cursor, -1)
 		if err := executeQuery(q, &labels); err != nil {
 			return nil, err
 		}
@@ -213,31 +224,29 @@ func fetchAllIssues(repoName string) ([]string, error) {
 	type IssueData struct {
 		Repository struct {
 			Issues struct {
-				Edges []Edge
+				Edges []NameIDEdge
 			}
 		}
 	}
 
-	queryString := fmt.Sprintf(`
-	    {
+	queryString := fmt.Sprintf(`{
 	  repository(owner: "%s", name: "%s") {
-	    issues(first: 100%s,states:OPEN) {
+	    issues(first: 100%s, states:OPEN) {
 	      edges {
 	        cursor
-	        node{
+	        node {
 	          id
 	        }
 	      }
-
 	    }
 	  }
-	}`, cfg.Owner, repoName, cursorPlaceHoler)
+	}`, cfg.Owner, repoName, cursorPlaceholder)
 
 	cursor := ""
 	var issues IssueData
 	for {
 		// set cursor for pagination & create the req
-		q := strings.Replace(queryString, cursorPlaceHoler, cursor, -1)
+		q := strings.Replace(queryString, cursorPlaceholder, cursor, -1)
 		if err := executeQuery(q, &issues); err != nil {
 			return nil, err
 		}
@@ -343,11 +352,12 @@ func applyLabels(issueId string, labelIds []string) error {
 	return executeQuery(str, nil)
 }
 
-// fetches the Ids for all repositories so we can create issues in the repos using their Ids
-func fetchRepoIds() (map[string]string, error) {
+// resolveSourceRepos fetches the IDs for all repositories so we can create
+// issues in the repos using their IDs.
+func resolveSourceRepos() (map[string]string, error) {
 	repoNamesToIds := make(map[string]string)
 	for r, _ := range cfg.RepoToLabelsMap {
-		id, err := fetchRepoId(r)
+		id, err := resolveRepo(r)
 		if err != nil {
 			return nil, err
 		}
@@ -357,12 +367,13 @@ func fetchRepoIds() (map[string]string, error) {
 	return repoNamesToIds, nil
 }
 
-func fetchRepoId(repoName string) (string, error) {
+func resolveRepo(repoName string) (string, error) {
 	repoQuery := `{
-  repository(owner:"%s", name:"%s") {
-    id
-  }
-}`
+		repository(owner:"%s", name:"%s") {
+			id
+		}
+	}`
+
 	type Data struct {
 		Repository struct {
 			Id string
