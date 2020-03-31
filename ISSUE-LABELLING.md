@@ -9,6 +9,7 @@
 
 
 - [Motivation](#motivation)
+- [Global labels](#global-labels)
 - [Descriptive labels](#descriptive-labels)
   - [Functional area (`area/`)](#functional-area-area)
   - [Component (`comp/`)](#component-comp)
@@ -19,7 +20,7 @@
   - [Topic (`topic/`)](#topic-topic)
 - [Execution labels](#execution-labels)
   - [Priority (`Pn`)](#priority-pn)
-  - [Hints/advisories (`hint/`)](#hintsadvisories-hint)
+  - [Need (`need/`)](#need-need)
   - [Status (`status/`)](#status-status)
 - [Implementation plan](#implementation-plan)
 - [Inspiration](#inspiration)
@@ -55,6 +56,15 @@ so that we can normalise this taxonomy across all language repos, and plan
 features and changes in total inter-alignment. We are convinced that by creating
 a cohesive and seamless experience across libp2p implementations, we'll unlock
 tremendous value for our beloved downstream users and developers.
+
+## Global labels
+
+These labels are an exception to the taxonomy below, but for a good reason: they
+are often searched by new contributors looking to get initially involved in a 
+project, and are default across GitHub. (See [GitHub help](https://help.github.com/en/github/building-a-strong-community/encouraging-helpful-contributions-to-your-project-with-labels) for details.)
+
+* help wanted
+* good first issue
 
 ## Descriptive labels
 
@@ -185,22 +195,20 @@ maintainers.
 * P2: Medium.
 * P3: Low.
 
-### Hints/advisories (`hint/`)
+### Need (`need/`)
 
 > Surfaces observations and facts about issues, facilitating progress to be
 > made.
 
-* hint/good-first-issue
-* hint/needs-contributor
-* hint/needs-participation
-* hint/needs-decision
-* hint/needs-triage
-* hint/needs-analysis
-* hint/needs-author-input
-* hint/needs-team-input
-* hint/needs-community-input
-* hint/needs-review
-* hint/needs-help
+* need/contributor
+* need/participation
+* need/decision
+* need/triage
+* need/analysis
+* need/author-input
+* need/team-input
+* need/community-input
+* need/review
 
 ### Status (`status/`)
 
