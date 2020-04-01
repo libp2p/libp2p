@@ -117,7 +117,6 @@ that allow submitters to set these labels.
 > Describes the nature of the issue.
 
 * kind/bug
-* kind/improvement
 * kind/test
 * kind/tracking-issue
 * kind/question
@@ -151,12 +150,9 @@ Values and calibration guidance:
 
 Values and calibration guidance:
 
-* effort/minutes: minutes.
 * effort/hours: one or multiple hours.
-* effort/day: one day.
-* effort/days: multiple days.
-* effort/week: one week.
-* effort/weeks: multiple weeks.
+* effort/days: one or multiple days.
+* effort/weeks: one or multiple weeks.
 
 ### Impact (`impact/`)
 
@@ -219,7 +215,7 @@ maintainers.
 * status/in-progress
 * status/blocked
 * status/inactive
-* status/waiting
+* status/ready
 * status/rotten
 
 ## Implementation plan
