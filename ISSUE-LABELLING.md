@@ -63,6 +63,7 @@ These labels are an exception to the taxonomy below, but for a good reason: they
 are often searched by new contributors looking to get initially involved in a 
 project, and are default across GitHub. (See [GitHub help](https://help.github.com/en/github/building-a-strong-community/encouraging-helpful-contributions-to-your-project-with-labels) for details.)
 
+* bounty
 * help wanted
 * good first issue
 
