@@ -8,17 +8,12 @@
   <a href="https://matrix.to/#/#libp2p:matrix.org"><img src="https://img.shields.io/badge/matrix-%23libp2p%3Amatrix.org-blue.svg?style=flat-square" /></a>
 </p>
 
-> This document presents libp2p, a modularized and extensible network stack to overcome the networking challenges faced when doing peer-to-peer applications. libp2p is used by IPFS as its networking library.
-
-# Description
 
 libp2p is a networking stack and library modularized out of The IPFS Project, and bundled separately for other tools to use.
 
 libp2p is the product of a long, and arduous quest of understanding -- a deep dive into the internet's network stack, and plentiful peer-to-peer protocols from the past. Building large scale peer-to-peer systems has been complex and difficult in the last 15 years, and libp2p is a way to fix that. It is a "network stack" -- a protocol suite -- that cleanly separates concerns, and enables sophisticated applications to only use the protocols they absolutely need, without giving up interoperability and upgradeability. libp2p grew out of IPFS, but it is built so that lots of people can use it, for lots of different projects.
 
-We will be writing a set of docs, posts, tutorials, and talks to explain what p2p is, why it is tremendously useful, and how it can help your existing and new projects.
-
-Meanwhile, learn more about libp2p at [**libp2p.io**](https://libp2p.io) and follow our evolving documentation efforts at [**docs.libp2p.io**](https://docs.libp2p.io)
+Learn more about libp2p at [**libp2p.io**](https://libp2p.io) and [**docs.libp2p.io**](https://docs.libp2p.io).
 
 ## Specification
 
@@ -35,35 +30,3 @@ Meanwhile, learn more about libp2p at [**libp2p.io**](https://libp2p.io) and fol
 ## Community Discussion
 
 Please visit our discussion forums at [**discuss.libp2p.io**](https://discuss.libp2p.io) to get help, ask questions about the past, present, and future of libp2p, and more.
-
-## Stub Explanation
-
-> Overview of the libp2p project
-
-### libp2p is the networking layer of IPFS
-
-![](img/libp2p.001.jpg)
-
-### a collection of p2p protocols
-
-![](img/libp2p.002.jpg)
-
-### modules that satisfy interfaces (roles)
-
-![](img/libp2p.003.jpg)
-
-### The whole of IPFS ...
-
-![](img/libp2p.004.jpg)
-
-### ... is made up of libp2p modules
-
-![](img/libp2p.005.jpg)
-
-### libp2p has two impls so far: Go and JS
-
-![](img/libp2p.006.jpg)
-
-### libp2p cool demo: orbit.chat (p2p chat)
-
-![](img/libp2p.007.jpg)
