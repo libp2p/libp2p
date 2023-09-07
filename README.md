@@ -38,6 +38,7 @@ Follow the latest libp2p implementations at
 - [nim-libp2p](//github.com/status-im/nim-libp2p) in Nim
 - [jvm-libp2p](//github.com/libp2p/jvm-libp2p) in Kotlin
 - [erlang-libp2p](//github.com/helium/erlang-libp2p) in Erlang
+- [zig-libp2p](//github.com/marcopolo/zig-libp2p) in Zig
 
 ## Community Discussion
 
