@@ -39,6 +39,7 @@ Follow the latest libp2p implementations at
 - [jvm-libp2p](//github.com/libp2p/jvm-libp2p) in Kotlin
 - [erlang-libp2p](//github.com/helium/erlang-libp2p) in Erlang
 - [zig-libp2p](//github.com/marcopolo/zig-libp2p) in Zig
+- [donet-libp2p](//github.com/NethermindEth/dognet-libp2p) in .NET
 
 ## Community Discussion
 
