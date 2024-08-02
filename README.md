@@ -43,6 +43,7 @@ Follow the latest **lib**p2p implementations at
 - [**jvm-libp2p**](//github.com/libp2p/jvm-libp2p) for Kotlin as well
 - [**zig-libp2p**](//github.com/marcopolo/zig-libp2p)
 - [**dotnet-libp2p**](//github.com/NethermindEth/dotnet-libp2p)
+- [**litep2p**](//github.com/paritytech/litep2p)
 
 ### Dormant Implementation Projects
 
