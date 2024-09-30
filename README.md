@@ -69,7 +69,7 @@ If you're a **lib**p2p implementer, consumer, or user you are welcome to join th
 
 Please visit our community-wide discussion forums at [**discuss.libp2p.io**](//discuss.libp2p.io) to discussion community events such as hackathons and conferences and to ask questions about the past, present, and future of **lib**p2p, and more.
 
-If you are looking for technical help about a specific **lib**p2p implementation, you may ask in the discussion forums on each of the implementation's Github Discusssions Forum. Here's the list of links to their technical discussion forums for each implementation listed above:
+If you are looking for technical help about a specific **lib**p2p implementation, you may ask in the discussion forums on each of the implementation's Github Discussions Forum. Here's the list of links to their technical discussion forums for each implementation listed above:
 
 - [**go-libp2p Tech Discussions**](//github.com/libp2p/go-libp2p/discussions)
 - [**js-libp2p Tech Discussions**](//github.com/libp2p/js-libp2p/discussions)
