@@ -135,7 +135,7 @@ Values and calibration guidance:
 
 * dif/trivial: Can be confidently tackled by newcomers, who are widely
   unfamiliar with libp2p.
-* dif/easy: A prexisting libp2p user should be able to pick this up.
+* dif/easy: A preexisting libp2p user should be able to pick this up.
 * dif/medium: Prior experience in having developed libp2p modules is likely
   helpful.
 * dif/hard: Suggests that having worked on the specific component affected
