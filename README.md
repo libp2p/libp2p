@@ -37,7 +37,7 @@ Follow the latest **lib**p2p implementations at
 - [**js-libp2p**](//github.com/libp2p/js-libp2p) for Node.js and the Browser
 - [**rust-libp2p**](//github.com/libp2p/rust-libp2p) supports Wasm as well
 - [**py-libp2p**](//github.com/libp2p/py-libp2p)
-- [**cpp-libp2p**](//github.com/soramitsu/libp2p)
+- [**cpp-libp2p**](//github.com/libp2p/cpp-libp2p)
 - [**swift-libp2p**](//github.com/swift-libp2p/swift-libp2p)
 - [**nim-libp2p**](//github.com/status-im/nim-libp2p)
 - [**jvm-libp2p**](//github.com/libp2p/jvm-libp2p) for Kotlin as well
