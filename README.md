@@ -39,7 +39,7 @@ Follow the latest **lib**p2p implementations at
 - [**py-libp2p**](//github.com/libp2p/py-libp2p)
 - [**cpp-libp2p**](//github.com/libp2p/cpp-libp2p)
 - [**swift-libp2p**](//github.com/swift-libp2p/swift-libp2p)
-- [**nim-libp2p**](//github.com/status-im/nim-libp2p)
+- [**nim-libp2p**](//github.com/vacp2p/nim-libp2p)
 - [**jvm-libp2p**](//github.com/libp2p/jvm-libp2p) for Kotlin as well
 - [**zig-libp2p**](//github.com/marcopolo/zig-libp2p)
 - [**dotnet-libp2p**](//github.com/NethermindEth/dotnet-libp2p)
