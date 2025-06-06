@@ -41,7 +41,7 @@ Follow the latest **lib**p2p implementations at
 - [**swift-libp2p**](//github.com/swift-libp2p/swift-libp2p)
 - [**nim-libp2p**](//github.com/vacp2p/nim-libp2p)
 - [**jvm-libp2p**](//github.com/libp2p/jvm-libp2p) for Kotlin as well
-- [**zig-libp2p**](//github.com/marcopolo/zig-libp2p)
+- [**zig-libp2p**](//github.com/zen-eth/zig-libp2p)
 - [**dotnet-libp2p**](//github.com/NethermindEth/dotnet-libp2p)
 - [**c-libp2p**](//github.com/Pier-Two/c-libp2p)
 - [**litep2p**](//github.com/paritytech/litep2p) an alternative Rust implementation
@@ -50,7 +50,8 @@ Follow the latest **lib**p2p implementations at
 
 The following are implementation projects that have fallen dormant and we would love to help volunteers revive them. If you're interested, please reach out on any of our forums or chat rooms and we can help you start where the previous maintainers left off.
 
-- [**erlang-libp2p**](//github.com/helium/erlang-libp2p) in Erlang
+- [**erlang-libp2p**](//github.com/helium/erlang-libp2p)
+- [**zig-libp2p**](//github.com/marcopolo/zig-libp2p) original implementation, now unmaintained
 
 ## Community 
 
