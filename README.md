@@ -92,9 +92,9 @@ If you are looking for technical help about a specific **lib**p2p implementation
   - [**#libp2p-docs**](//filecoinproject.slack.com/archives/C04F9TM46CB)
   - [**#project-universal-connectivity**](//filecoinproject.slack.com/archives/C04UFPHSM7S)
 - **lib**p2p on Discord
-  - [**#announcements**](//discord.gg/FSEcZdnP)
-  - [**#community**](//discord.gg/9R7uhF5D)
-  - [**#implementers**](//discord.gg/2FPVa6Xy)
+  - [**#announcements**](//discord.gg/w7yVkNyTf5)
+  - [**#community**](//discord.gg/SB7d6KzsK5)
+  - [**#implementers**](//discord.gg/XZnXDuf2t3)
 - [**lib**p2p on Telegram](//t.me/libp2p_community)
   - [**#announcements**](//t.me/libp2p_community/1)
   - [**#community**](//t.me/libp2p_community/11)
