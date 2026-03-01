@@ -233,7 +233,7 @@ maintainers.
 ## Inspiration
 
 * https://github.com/facebook/react/labels
-* https://github.com/rust/rust-lang/labels
+* https://github.com/rust-lang/rust/labels
 * https://github.com/kubernetes/kubernetes/labels
 * https://bugs.python.org/
 * https://github.com/tensorflow/tensorflow/labels
