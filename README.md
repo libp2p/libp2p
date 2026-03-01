@@ -12,9 +12,9 @@
   <a href="https://filecoinproject.slack.com/archives/C03K82MU486"><img src="https://img.shields.io/badge/slack-%23libp2p%5Fimplementers-a8539e.svg?style=flat-square" /></a>
   <a href="https://filecoinproject.slack.com/archives/C04F9TM46CB"><img src="https://img.shields.io/badge/slack-%23libp2p%5Fdocs-a8539e.svg?style=flat-square" /></a>
   <a href="https://filecoinproject.slack.com/archives/C04UFPHSM7S"><img src="https://img.shields.io/badge/slack-%23universal%5Fconnectivity-a8539e.svg?style=flat-square" /></a>
-  <a href="https://discord.gg/FSEcZdnP"><img src="https://img.shields.io/badge/discord-%23announcements-ef65a4.svg?style=flat-square" /></a>
-  <a href="https://discord.gg/9R7uhF5D"><img src="https://img.shields.io/badge/discord-%23community-ef65a4.svg?style=flat-square" /></a>
-  <a href="https://discord.gg/2FPVa6Xy"><img src="https://img.shields.io/badge/discord-%23implementers-ef65a4.svg?style=flat-square" /></a>
+  <a href="https://discord.gg/w7yVkNyTf5"><img src="https://img.shields.io/badge/discord-%23announcements-ef65a4.svg?style=flat-square" /></a>
+  <a href="https://discord.gg/SB7d6KzsK5"><img src="https://img.shields.io/badge/discord-%23community-ef65a4.svg?style=flat-square" /></a>
+  <a href="https://discord.gg/XZnXDuf2t3"><img src="https://img.shields.io/badge/discord-%23implementers-ef65a4.svg?style=flat-square" /></a>
   <a href="https://t.me/libp2p_community"><img src="https://img.shields.io/badge/telegram-%23libp2p-f9c234.svg?style=flat-square" /></a>
   <a href="https://matrix.to/#/#libp2p-implementers:ipfs.io"><img src="https://img.shields.io/badge/matrix-%23libp2p%5Fimplementers%3Amatrix.org-cddd40.svg?style=flat-square" /></a>
   <a href="https://matrix.to/#/#libp2p-community:ipfs.io"><img src="https://img.shields.io/badge/matrix-%23libp2p%5Fcommunity%3Amatrix.org-cddd40.svg?style=flat-square" /></a>
@@ -69,15 +69,15 @@ If you're a **lib**p2p implementer, consumer, or user you are welcome to join th
 
 ### Discussion
 
-Please visit our community-wide discussion forums at [**discuss.libp2p.io**](//discuss.libp2p.io) to discussion community events such as hackathons and conferences and to ask questions about the past, present, and future of **lib**p2p, and more.
+Please visit our community-wide discussion forums at [**discuss.libp2p.io**](//discuss.libp2p.io) to discuss community events such as hackathons and conferences and to ask questions about the past, present, and future of **lib**p2p, and more.
 
-If you are looking for technical help about a specific **lib**p2p implementation, you may ask in the discussion forums on each of the implementation's Github Discusssions Forum. Here's the list of links to their technical discussion forums for each implementation listed above:
+If you are looking for technical help about a specific **lib**p2p implementation, you may ask in the discussion forums on each of the implementation's Github Discussions Forum. Here's the list of links to their technical discussion forums for each implementation listed above:
 
 - [**go-libp2p Tech Discussions**](//github.com/libp2p/go-libp2p/discussions)
 - [**js-libp2p Tech Discussions**](//github.com/libp2p/js-libp2p/discussions)
 - [**rust-libp2p Tech Discussions**](//github.com/libp2p/rust-libp2p/discussions)
 - [**py-libp2p Tech Discussions**](//github.com/libp2p/py-libp2p/discussions)
-- [**cpp-libp2p Tech Discussions**](//github.com/soramitsu/libp2p/discussions)
+- [**cpp-libp2p Tech Discussions**](//github.com/libp2p/cpp-libp2p/discussions)
 - [**swift-libp2p Tech Discussions**](//github.com/swift-libp2p/swift-libp2p/discussions)
 - [**nim-libp2p Fourm**](//forum.vac.dev/)
 - [**jvm-libp2p Tech Discussions**](//github.com/libp2p/jvm-libp2p/discussions)
