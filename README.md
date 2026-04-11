@@ -53,6 +53,22 @@ The following are implementation projects that have fallen dormant and we would 
 - [**erlang-libp2p**](//github.com/helium/erlang-libp2p)
 - [**zig-libp2p**](//github.com/marcopolo/zig-libp2p) original implementation, now unmaintained
 
+
+## Security
+
+For reporting security vulnerabilities, please follow the established process detailed at the [discussions page](https://github.com/libp2p/libp2p/discussions/274).
+
+### Reporting a Vulnerability
+
+If you believe you have identified a security issue in libp2p, report it via security@libp2p.io
+
+Please include:
+
+- Clear reproduction steps  
+- Impacted implementations (e.g. go-libp2p, js-libp2p, py-libp2p, rust-libp2p)  
+- Expected vs observed behavior  
+- Observed impact (network-level or application-level)  
+
 ## Community 
 
 ### Announcements
