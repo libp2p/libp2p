@@ -30,8 +30,7 @@ View the formal specifications of **lib**p2p on the [**specifications repository
 
 ## Implementations
 
-Follow the latest **lib**p2p implementations at
-[**libp2p.io/implementations**](//libp2p.io/implementations/).
+Current active **lib**p2p implementations:
 
 - [**go-libp2p**](//github.com/libp2p/go-libp2p)
 - [**js-libp2p**](//github.com/libp2p/js-libp2p) for Node.js and the Browser
