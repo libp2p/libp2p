@@ -40,7 +40,7 @@ Current active **lib**p2p implementations:
 - [**swift-libp2p**](//github.com/swift-libp2p/swift-libp2p)
 - [**nim-libp2p**](//github.com/vacp2p/nim-libp2p)
 - [**jvm-libp2p**](//github.com/libp2p/jvm-libp2p) for Kotlin as well
-- [**zig-libp2p**](//github.com/blockblaz/zig-libp2p))
+- [**zig-libp2p**](//github.com/blockblaz/zig-libp2p)
 - [**dotnet-libp2p**](//github.com/NethermindEth/dotnet-libp2p)
 - [**haskell-libp2p**](//github.com/adust09/hs-libp2p)
 - [**Leanp2p**](//github.com/etheorem/leanp2p)
