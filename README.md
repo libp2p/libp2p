@@ -40,13 +40,17 @@ Current active **lib**p2p implementations:
 - [**swift-libp2p**](//github.com/swift-libp2p/swift-libp2p)
 - [**nim-libp2p**](//github.com/vacp2p/nim-libp2p)
 - [**jvm-libp2p**](//github.com/libp2p/jvm-libp2p) for Kotlin as well
-- [**zig-libp2p**](//github.com/zen-eth/zig-libp2p)
+- [**zig-libp2p**](//github.com/blockblaz/zig-libp2p))
 - [**dotnet-libp2p**](//github.com/NethermindEth/dotnet-libp2p)
 - [**haskell-libp2p**](//github.com/adust09/hs-libp2p)
 - [**Leanp2p**](//github.com/etheorem/leanp2p)
-- [**c-libp2p**](//github.com/Pier-Two/c-libp2p)
 - [**minip2p**](//github.com/deepso7/minip2p)
 - [**litep2p**](//github.com/paritytech/litep2p) an alternative Rust implementation
+- [**c-libp2p**](//github.com/Pier-Two/c-libp2p)
+- [**Lean-libp2p**](//github.com/qdrvm/leanp2p/) an implementation for Lean Ethereum project
+- [**dart-libp2p**](//github.com/stephanfeb/dart_libp2p)
+- [**lua-libp2p**](//github.com/dozyio/lua-libp2p)
+  
 
 ### Dormant Implementation Projects
 
